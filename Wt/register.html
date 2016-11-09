@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<title>Sign up</title>
+
+ 
+    <link rel='stylesheet' href='http://localhost/Wt/css/style.css'/>
+</head>
+
+<body>
+<div id="header" style="background-color:#19334d" >
+  <a href="http://localhost/index.php"><img src="http://localhost/Wt/img/edge.jpg" align="middle" style="margin-left:30%;"></a>
+</div>
+<div style="background-image:url(img/matrix.gif); background-repeat:no-repeat;
+    background-size:cover; height:100%" >
+
+<nav>
+  <ul id="ul">
+    <li id="li">
+      <a id="lia" href="learn.php"> <span>Learn</a> </span> </li>
+
+    <li id="li" class="dropdown" "style="padding-left:10px"><a href="#"> Gates</a>
+    <div class="dropdown-content" style="z-index:20">
+    <a href="AND.php">AND Gate</a>
+    <a href="OR.php">OR Gate</a>
+    <a href="NOT.php">NOT Gate</a>
+    <a href="NAND.php">NAND Gate</a>
+    <a href="NOR.php">NOR Gate</a>
+    <a href="XOR.php">XOR Gate</a>
+    <a href="XNOR.php">XNOR Gate</a>
+    </div>
+    </li>
+
+    <li id="li"><a id="lia" href="shop.php">Shop</a></li>
+    <li id="li"><a id="lia" href="test.php">Test</a></li>
+     <!-- <li id="li" style="padding-left:10px"><a id="lia" href="about.html">About us</a></li> -->
+
+    <li id="signin" style="float:right; padding-right: 10px;"><a href="login.html"> Log in </a> </li>
+    <li id="signin" style="float:right; padding-right: 10px;"><a href="register.html"> Register </a> </li>
+
+</nav>
+
+
+
+<form action="http://localhost/Wt/register.php" method="POST">
+
+<div style="margin-left:40%" class="column">
+
+<input placeholder="Enter username" style="margin-top:30px;" type="text" name="user" required></br>
+<input placeholder="Enter password" style="margin-top:30px;"type="password" name="pass" required></br>
+<input placeholder="Enter email" style="margin-top:30px"type="email" name="email_id" required></br>
+<input style="margin-top:30px;"type="submit" value="Register">
+</div>
+
+</body>
+</html>
+

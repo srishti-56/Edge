@@ -1,0 +1,82 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+var a=0;
+var b=0;
+var y;
+var flag=1;
+
+while(flag==1)
+{
+alert("Enter 1 or 0 for values of A and B");
+//var a=document.getElementById("a").value;
+//var b=document.getElementById("b").value;
+
+var a=prompt("Enter value of A");
+
+var b=prompt("Enter value of B");
+if(a>1||b>1||a<0||b<0||isNaN(a)||isNaN(b))
+{  flag=1;
+ alert("Please re-enter numbers only 0 or 1");
+}
+else
+ flag=0;
+
+}
+
+ alert(a);
+ alert(b);
+
+function ADD()
+{
+  var sum=a&b;
+  alert(sum);
+}
+function OR()
+{
+  var sum=a|b;
+  alert(sum);
+}
+function NAND()
+{
+  var sum=!(a&b);
+  alert(sum);
+}
+function NOR()
+{
+  var sum=!(a|b);
+  alert(sum);
+}
+function XOR()
+{
+  var sum=!(a&b)|(a&!b);
+  alert(sum);
+}
+function XNOR()
+{
+  var sum=!(!a&b|a&!b);
+  alert(sum);
+}
+var ch=prompt("Enter Which GATE");
+if(ch=="AND")
+ADD();
+else if(ch=="OR")
+OR();
+else if(ch=="NOR")
+NOR();
+else if(ch=="NAND")
+NAND();
+else if(ch=="XOR")
+XOR();
+else if(ch=="XNOR")
+XNOR();
+else {
+  alert("Please enter a valid gate");
+}
+</script>
+<head>
+<body>
+</body>
+</html>
